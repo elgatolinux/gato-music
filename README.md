@@ -66,6 +66,12 @@ Puedes elegir entre `flac` (por defecto), `mp3`, `m4a` y `wav`.
 ./target/release/gato-music "daft punk one more time" -f mp3
 ```
 
+### 5. Especificar un directorio de salida
+Guarda las canciones o álbumes descargados en la carpeta que tú decidas (si no existe, se creará automáticamente).
+```bash
+./target/release/gato-music "daft punk harder better faster stronger" -o ~/Music/DaftPunk
+```
+
 ---
 
 ## 🎛️ Flags y Opciones del CLI
@@ -82,6 +88,7 @@ Puedes consultar la ayuda del comando en cualquier momento usando la bandera `-h
 | `<QUERY>` | **(Requerido)** El término de búsqueda de texto o la URL (video o playlist) que deseas descargar. |
 | `-f, --format <FORMAT>` | El formato de audio de salida. Opciones soportadas: `flac` *(por defecto)*, `mp3`, `m4a`, `wav`. |
 | `-a, --album` | Bandera para indicar que el término en `<QUERY>` debe buscarse como un álbum en YouTube Music. Descargará la playlist del álbum completo en un directorio dedicado. |
+| `-o, --output <DIR>` | Especifica el directorio de destino donde se guardarán las descargas. |
 | `-h, --help` | Muestra el menú de ayuda con la descripción de todas las opciones. |
 | `-V, --version` | Muestra la versión actual del programa. |
 
