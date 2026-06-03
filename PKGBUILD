@@ -3,7 +3,7 @@
 
 pkgname=gato-music-git
 _pkgname=gato-music
-pkgver=0.1.0.r0.g8476251
+pkgver=0.1.0.r8.1b6d19d
 pkgrel=1
 pkgdesc="Descargador de música CLI con estética de gato que gestiona yt-dlp e integra letras de LRCLIB (Git)"
 arch=('x86_64' 'aarch64')
@@ -27,7 +27,7 @@ pkgver() {
 prepare() {
   cd "$_pkgname"
   export CARGO_HOME="$srcdir/cargo-home"
-  cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
+  cargo fetch --target "$(rustc -vV | sed -n 's/host: //p')"
 }
 
 build() {
