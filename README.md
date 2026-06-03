@@ -39,6 +39,20 @@ Para compilar el proyecto desde el código fuente necesitas tener instalado Rust
 cargo install --path .
 ```
 
+### 📦 Instalación en Arch Linux (AUR)
+
+Si utilizas Arch Linux, puedes construir e instalar el paquete localmente usando el archivo `PKGBUILD` provisto:
+
+1. Asegúrate de tener las herramientas de construcción:
+   ```bash
+   sudo pacman -S base-devel
+   ```
+2. Ejecuta `makepkg` para compilar e instalar el paquete (esto añadirá `gato-music` a tu `PATH` automáticamente):
+   ```bash
+   makepkg -si
+   ```
+
+
 ---
 
 ## 📖 Guía de Uso y Ejemplos
