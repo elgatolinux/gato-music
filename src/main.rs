@@ -199,7 +199,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
 
     let mut outtmpl = if is_album {
-        "%(playlist_title|Album)s/%(title)s.%(ext)s".to_string()
+        "%(playlist_title|Album)s/%(playlist_index)s. %(title)s.%(ext)s".to_string()
     } else {
         "%(title)s.%(ext)s".to_string()
     };
