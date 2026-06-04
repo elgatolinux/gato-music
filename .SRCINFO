@@ -1,0 +1,17 @@
+pkgbase = gato-music-git
+	pkgdesc = Descargador de música CLI con estética de gato que gestiona yt-dlp e integra letras de LRCLIB (Git)
+	pkgver = 0.1.0.r8.1b6d19d
+	pkgrel = 1
+	url = https://github.com/elgatolinux/gato-music
+	arch = x86_64
+	arch = aarch64
+	license = MIT
+	makedepends = cargo
+	makedepends = git
+	depends = ffmpeg
+	provides = gato-music
+	conflicts = gato-music
+	source = gato-music::git+https://github.com/elgatolinux/gato-music.git
+	md5sums = SKIP
+
+pkgname = gato-music-git
