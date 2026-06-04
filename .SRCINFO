@@ -8,6 +8,7 @@ pkgbase = gato-music-git
 	license = MIT
 	makedepends = cargo
 	makedepends = git
+	depends = yt-dlp
 	depends = ffmpeg
 	provides = gato-music
 	conflicts = gato-music
